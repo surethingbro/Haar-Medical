@@ -1,0 +1,428 @@
+body {  
+  background-color: #213246;
+}
+
+
+.logo {
+  max-height: 110px;
+  height: auto;
+  width: auto;
+}
+
+.logo2 {
+
+  max-height: 130px;
+  height: auto;
+  width: auto;
+  display:block;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 5px;
+  
+}
+.navbar /* barra de navegación*/ {
+display: flex;
+font-family: "Montserrat";
+justify-content: space-evenly;
+flex-grow: 1;
+max-width: 650px;
+margin-left: auto;
+}
+
+.navbar a /*texto de la barra */{ 
+  text-decoration: none;
+  color: #193247;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 21.5px;
+}
+
+.navbar a:hover /*Lo que sale cuando se pasa el mouse por encima*/ {
+  color: #908570;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #F7E8D3;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  background-color: #213246;
+  color: white;
+  padding: 80px 60px;
+  flex-wrap: wrap;
+  
+}
+
+.hero-video {
+  flex: 1;
+  height: 450px;
+  max-height: 100%;
+  max-width: 350px;
+  width: 70%;
+  object-fit: cover;
+  margin-left: 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 1000px;
+  margin-right: 40px; 
+  padding-left: 30px; 
+
+}
+
+.hero h1 {
+  font-family: "Montserrat", Sans-serif;
+    font-size: 60px;
+    font-weight: 350;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.1em;
+    letter-spacing: 5px;
+    word-spacing: 0em;
+}
+
+.hero p {
+  font-size: 30px;
+  font-family: "Montserrat";
+  margin: 0 auto 30px auto;
+  text-align: center;
+  max-width: 700px;
+}
+
+.hero .highlight {
+  color: white;
+  font-weight: bold;
+}
+
+.cta-button {
+  background-color: #bac6d4;
+  color: white;
+  line-height: normal;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Arial';
+  font-size: 20px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: rgb(11,41,75)
+}
+
+.a-wrapper {
+  text-align: center;
+  margin-top: 30px;
+  
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  min-height: 450px;
+  overflow: clip;
+  margin: auto;
+  background: #193247;
+  border-radius: 15px;
+  color: white;
+  font-family: Arial, sans-serif;
+  
+}
+
+.carousel-track {
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carousel-slide {
+  width: 100%;
+  display: none;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 30px;
+  padding: 30px 50px;
+}
+
+.carousel-slide.active {
+  display: flex;
+}
+
+.productos-video, .productos-img {
+  flex-shrink: 0;
+  width: 450px;      
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-left: 20px;
+}
+
+
+.carousel-text {
+  width: 50%;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.carousel-text h3 {
+  font-size: 75px;
+  margin-top: auto;
+  margin-bottom: 0 0 30px 0;
+}
+
+.carousel-text p {
+  font-size: 18px;
+  color: #ccc;
+  margin-top: 0px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(29, 45, 62, 0.9);
+  color: white;
+  border: none;
+  padding: 10px 17.5px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  user-select: none;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 1px;
+}
+
+.arrow.right {
+  right: 1px;
+}
+
+.arrow:hover {
+  background-color: darkcyan;
+}
+
+
+.contacto-section {
+  background-color: #1d2d3e;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.contacto-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #3b7fa5;
+  outline: none;
+}
+
+.btn-enviar {
+  background-color: #3b7fa5;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #2a6482;
+}
+
+.carousel-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.carousel-text li {
+  display: inline-block;
+}
+
+#nosotros h1 {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 60px;
+  font-weight: 350;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.1em;
+  letter-spacing: 5px;
+  word-spacing: 0em;
+  color: white;
+}
+
+#nosotros p {
+  font-family: "Montserrat";
+  color: white;
+  font-size: 25px;
+  justify-content: center;
+  padding: 0 40px;
+  text-align: justify;
+  }
+
+  .mision-vision-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 60px;
+    gap: 40px;
+    padding: 30px 20px;
+    background-color: #1d2d3e;
+    border-radius: 15px;
+  }
+  
+  .mision, .vision {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .mision h2, .vision h2 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center; 
+    font-size: 36px;    
+    color: #6FAE98;
+    margin-bottom: 20px;
+  }
+  
+  .mision p, .vision p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #eee;
+    text-align: justify;
+  }
+  
+  .separator {
+    width: 3px;
+    background-color: #6FAE98;
+    border-radius: 2px;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .mision-vision-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .separator {
+      width: 80%;
+      height: 2px;
+      margin: 30px 0;
+    }
+  
+    .mision, .vision {
+      text-align: center;
+    }
+  }
+  
+  .historia-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .historia-texto {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .historia-texto h2 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 40px;
+    font-weight: 350;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  .historia-texto p {
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    margin-top: 10px;
+  }
+  
+  .imagen-historia {
+    flex-shrink: 0;
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  #nosotros {
+    scroll-margin-top: 100px; 
+    }
+
+ #inicio {
+  scroll-margin-top: 100px;
+ }
+
+ 
