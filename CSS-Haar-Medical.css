@@ -33,6 +33,7 @@ body {
   margin: 0 15px; 
   font-weight: bold; 
   font-size: 21.5px; 
+  
 }
    
 .navbar a:hover /*Lo que sale cuando se pasa el mouse por encima*/ { 
@@ -244,14 +245,14 @@ html {
       margin-top: 40px; 
       font-family: "Montserrat", Sans-serif; 
       margin-bottom: 35px; 
-      font-size: 60px; 
+      font-size: 60px;
       font-weight: 350; 
       text-transform: uppercase; 
       text-align: center; 
       font-style: normal; 
       text-decoration: none; 
       line-height: 1.1em; 
-      letter-spacing: 5px; 
+      letter-spacing: 2px; 
       word-spacing: 0em; 
       color: white; 
     } 
@@ -385,9 +386,10 @@ html {
        padding: 0; 
       }
 
-      @media (max-width: 1024px) {
+ @media (max-width: 1024px) {
 
-  /* TOPBAR */
+  
+
   .topbar {
     flex-direction: column;
     gap: 10px;
@@ -400,7 +402,6 @@ html {
     flex-wrap: wrap;
   }
 
-  /* HERO */
   .hero {
     flex-direction: column;
     padding: 40px 20px;
@@ -423,17 +424,57 @@ html {
 
   .hero-video {
     width: 100%;
-    max-width: 320px;
+    max-width: 260px;
+    height: auto;
     margin: 30px auto 0 auto;
   }
 
-  /* NOSOTROS */
+  .productos-video,
+  .productos-img {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin-left: 0;
+  }
+
+  .carousel-text {
+  width: 100%;
+  text-align: center;
+  padding-top: 0;
+  }
+
+  .arrow {
+  padding: 8px 12px;
+  font-size: 18px;
+  }
+
+  .carousel-text h3 {
+  font-size: clamp(28px, 6vw, 40px);
+  margin-bottom: 15px;
+  }
+
+  .carousel-text p {
+  font-size: 16px;
+  }
+  .carousel-slide {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  }
+
   #nosotros p {
     padding: 0 20px;
     font-size: 20px;
   }
 
-  /* MISIÓN Y VISIÓN */
+  #nosotros h1 {
+    font-size: clamp(32px, 6vw, 42px);
+    letter-spacing: 2px;
+    line-height: 1.2;
+  }
+
   .mision-vision-container {
     flex-direction: column;
     padding: 20px;
@@ -464,4 +505,5 @@ html {
     width: 200px;
     margin-top: 20px;
   }
+
 }
