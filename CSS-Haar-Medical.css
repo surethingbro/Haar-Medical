@@ -388,8 +388,15 @@ html {
 
  @media (max-width: 1024px) {
 
-  
+  .logo {
+    max-height: clamp(70px, 8vw, 105px);
+  }
 
+
+
+  .navbar a {
+    font-size: clamp(12px, 3vw, 21.5px);
+  }
   .topbar {
     flex-direction: column;
     gap: 10px;
