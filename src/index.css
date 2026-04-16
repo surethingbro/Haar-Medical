@@ -32,7 +32,7 @@ body {
 
     .qn-sms {
         @apply text-center md:text-center text-3xl md:text-5xl font-mont-semibold text-white uppercase not-italic 
-            leading-[1.1em] tracking-[2px] no-underline my-[20px];
+            leading-[1.1em] inline-block tracking-[2px] no-underline my-[20px];
     }
 
     .swiper-slide {

@@ -2,9 +2,7 @@ import inicio from '../images/inicio-icon.png';
 import vid from '../images/Intro-1.mp4'
 
 export const Inicio = () => {
-    const handleClick = () => {
-        alert('button clicked')
-    }
+    
     return (
         <section id="inicio" className='flex flex-row  '>
             <div className=" px-5 text-center py-5 ">
@@ -16,7 +14,7 @@ export const Inicio = () => {
                 </p>
 
                 <div className='text-center py-2.5'>
-                    <button  onClick={handleClick} className='cita-btn'>Agenda tu cita</button>
+                    <a href="#contacto" className='cita-btn'>Agenda tu cita</a>
                 </div>
 
                 <img src={inicio} alt="Inicio" className='w-[4.8rem] mx-auto' />
