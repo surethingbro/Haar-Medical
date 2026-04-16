@@ -6,7 +6,7 @@ export const Inicio = () => {
     return (
         <section id="inicio" className='flex flex-row  '>
             <div className=" px-5 text-center py-5 ">
-                <h1 className='text-sm font-mont-medium text-white'>Más que estética, <br/>
+                <h1 className='text-sm font-mont-medium text-white uppercase'>Más que estética, <br/>
                 <span className=" font-bold px-3">es confianza.</span> </h1>
                 
                 <p className='font-mont-regular text-white text-[0.5rem] mt-2 px-3 w-fit px-2'>
