@@ -12,9 +12,14 @@ export const Inicio = () => {
                     Recupera tu seguridad con tratamientos pensados para ti 
                 </p>
 
+                <div className='text-center py-2.5'>
+                    <a href="#contacto" className='cita-btn'>Agenda tu cita</a>
+                </div>
+
+                <img src={inicio} alt="Inicio" className='w-[4.8rem] mx-auto' />
             </div>
 
-            <video autoPlay loop muted className='object-cover rounded-[15px] shadow-[0_3px_8px_rgba(0,0,0,0.15)] py-2 px-2 w-50 h-50'>
+            <video autoPlay loop muted className='object-cover rounded-[15px] shadow-[0_2px_2px_rgba(0,0,0,0.15)] py-2 px-2 w-50 h-50'>
                 <source src={vid} type="video/mp4" />
                 Lo sentimos, no se puede mostrar el video en este momento.
             </video>
