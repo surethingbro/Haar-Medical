@@ -24,23 +24,7 @@ body {
     .nav-a {
         @apply py-1 px-1 text-[0.625rem] sm:text-sm md:text-lg lg:text-2xl font-mont-bold hover:text-srv text-primarydark transition duration-300;
     }
-    .inicio-h1 {
-        @apply font-mont-medium mt-auto text-[60px] uppercase text-center not-italic no-underline leading-[1.1em] tracking-[5px];
-    }
-
-    .inicio-p {
-        @apply text-[30px] font-mont-regular mt-[0] mx-auto mb-[30px] text-center max-w-[700px];
-    }
     
-    .cita-btn {
-        @apply bg-btn text-[white] leading-normal no-underline font-bold font-mont-regular 
-        text-[20px] py-[15px] px-[20px] rounded-[10px] hover:bg-[#5a6a8a] transition-colors duration-300 ease-in-out;
-    }
-
-    .intro-vid {
-        @apply flex-[1] h-[445px] max-h-full max-w-[350px] w-[70%] object-cover ml-[50px] rounded-[10px] 
-        shadow-[0_4px_8px_rgba(0,0,0,0.15)] -m-[15px];
-    }
 
     .qn-sms {
         @apply text-center md:text-center text-3xl md:text-5xl font-mont-semibold text-white uppercase not-italic 

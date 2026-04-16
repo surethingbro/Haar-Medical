@@ -1,21 +1,26 @@
+import inicio from '../images/inicio-icon.png';
+import vid from '../images/Intro-1.mp4'
+
 export const Inicio = () => {
     return (
-        <section id="inicio" className="flex justify-between items-start text-[white] py-[80px] px-[60px] flex-wrap">
-            <div className="flex-1 max-w-[1000px] mr-[40px] pl-[30px]">
-                <h1 className="inicio-h1">Más que estética, <span className="font-bold">es confianza.</span> </h1>
-                <p className="inicio-p">Recupera tu seguridad con tratamientos pensados para ti.</p>
-            
-            <div className="text-center mt-[30px]">
-                <a href="#contacto" className="cita-btn">Agenda tu cita</a>
-            </div>
-            <img src="./inicio-icon.png" alt="Ícono de inicio" className="max-h-[130px] h-auto w-auto block ml-auto mr-auto mt-[5px] w-[100px]"/>
+        <section id="inicio" className='flex flex-row '>
+            <div className="bg-red-900 px-5 text-center py-5 ">
+                <h1 className='text-sm font-mont-medium '>Más que estética, <br/>
+                <span className=" bg-red-400 font-bold px-3">es confianza.</span> </h1>
+                
+                <p className='text-[0.5rem] bg-blue-400 mt-2 px-3 w-fit px-2'>
+                    Recupera tu seguridad con tratamientos pensados para ti 
+                </p>
+
             </div>
 
-            <video autoPlay loop muted className="intro-vid">
-                <source src="./Intro-1.mp4" type="video/mp4" />
+            <video autoPlay loop muted className='bg-blue-400 rounded-[15px] py-2 w-50 h-50'>
+                <source src={vid} type="video/mp4" />
                 Lo sentimos, no se puede mostrar el video en este momento.
             </video>
 
         </section>
     )
 }
+
+    
