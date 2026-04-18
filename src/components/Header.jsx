@@ -12,7 +12,6 @@ export const Header = () => {
                 <li> <a href="#servicios" className="nav-a">Servicios</a> </li>
                 <li> <a href="#contacto" className="nav-a">Contacto</a> </li>
                 </ul>
-
             </div>
     </nav>
 

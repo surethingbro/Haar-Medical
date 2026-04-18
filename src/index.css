@@ -16,6 +16,7 @@ body {
     --font-mont-semibold: "Montserrat-SemiBold", sans-serif;
     --font-mont-bold: "Montserrat-Bold", sans-serif;
     
+    --breakpoint-xsm: 35rem; /* 570px */
 
 }
 
@@ -26,7 +27,7 @@ body {
     }
     
     .cita-btn {
-        @apply text-white bg-btn text-xs leading-normal no-underline font-bold py-1 px-3 rounded-lg hover:bg-[#5a6a8a]
+        @apply xsm:py-2 sm:py-[0.7rem] text-white bg-btn text-xs sm:text-sm leading-normal no-underline font-bold py-1 px-3 rounded-lg hover:bg-[#5a6a8a]
         transition-colors duration-300 ease-in-out;
     }
 
