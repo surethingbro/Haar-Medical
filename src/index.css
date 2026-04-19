@@ -19,17 +19,18 @@ body {
     --breakpoint-xsm: 35rem; /* 570px */
     --breakpoint-xmd: 56.25rem; /* 900px */
     --breakpoint-xxl: 160rem; /* 2560px */
+    --breakpoint-xxxl: 240rem; /*3840px */
 
 }
 
 
 @layer components {
     .nav-a {
-        @apply py-1 px-1 text-[0.625rem] sm:text-sm md:text-lg lg:text-2xl font-mont-bold hover:text-srv text-primarydark transition duration-300;
+        @apply py-1 px-1 text-[0.625rem] sm:text-sm md:text-lg lg:text-2xl xxl:text-5xl xxxl:text-7xl font-mont-bold hover:text-srv text-primarydark transition duration-300;
     }
     
     .cita-btn {
-        @apply xsm:py-2 sm:py-[0.7rem] xl:py-[1rem] xl:text-xl 2xl:text-3xl xxl:text-5xl text-white bg-btn text-xs sm:text-sm leading-normal no-underline font-bold py-1 px-3 rounded-lg xl:rounded-xl 2xl:rounded-2xl xxl:rounded-[25px] hover:bg-[#5a6a8a]
+        @apply xsm:py-2 sm:py-[0.7rem] xl:py-[1rem] xl:text-xl 2xl:text-3xl xxl:text-5xl xxxl:text-8xl text-white bg-btn text-xs sm:text-sm leading-normal no-underline font-bold py-1 px-3 rounded-lg xl:rounded-xl 2xl:rounded-2xl xxl:rounded-[25px] xxxl:rounded-[40px] hover:bg-[#5a6a8a]
         transition-colors duration-300 ease-in-out;
     }
 

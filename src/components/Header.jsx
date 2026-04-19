@@ -3,7 +3,7 @@ import logo from '../images/header-logo.png';
 export const Header = () => {
   return (
     <nav className="bg-primarylight shadow-lg flex items-center justify-between py-3 sm:py-5 sm:px-10 px-4 sticky top-0 left-0 w-full">
-            <img className="w-[4.8rem] sm:w-[10rem] md:w-[10rem] lg:w-[13.75rem]" src={logo} alt="Logo"/>
+            <img className="w-[4.8rem] sm:w-[10rem] md:w-[10rem] lg:w-[13.75rem] xxl:w-[25rem] xxxl:w-[40rem]" src={logo} alt="Logo"/>
 
             <div className="flex items-center text-black ">
               <ul className="list-none flex items-center md:gap-x-6 lg:gap-x-8 xl:gap-x-15">
