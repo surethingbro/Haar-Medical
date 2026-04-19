@@ -17,6 +17,7 @@ body {
     --font-mont-bold: "Montserrat-Bold", sans-serif;
     
     --breakpoint-xsm: 35rem; /* 570px */
+    --breakpoint-xmd: 56.25rem; /* 900px */
 
 }
 
