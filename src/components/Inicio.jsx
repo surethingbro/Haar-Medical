@@ -7,12 +7,12 @@ export const Inicio = () => {
             
             {/* Columna texto */}
             <div className="px-5 text-center py-5 sm:px-10 xmd:px-20 flex flex-col items-center">
-                <h1 className='text-sm xsm:text-[1.188rem] sm:text-2xl xmd:text-3xl xl:text-[2.75rem] xl:mt-4 2xl:text-[3.5rem] xxl:text-[5.5rem] xxxl:text-[7.5rem] font-mont-medium text-white uppercase'>
+                <h1 className='text-base xsm:text-[1.188rem] sm:text-2xl xmd:text-3xl xl:text-[2.75rem] xl:mt-4 2xl:text-[3.5rem] xxl:text-[5.5rem] xxxl:text-[7.5rem] font-mont-medium text-white uppercase'>
                     Más que estética, <br/>
                     <span className="font-bold px-3">es confianza.</span>
                 </h1>
 
-                <p className='font-mont-regular text-white text-[0.5rem] xsm:text-[0.813rem] sm:text-xs xmd:text-base xl:text-2xl 2xl:text-3xl xxl:text-5xl xxxl:text-7xl xl:mt-4 mt-2 px-3 w-fit'>
+                <p className='font-mont-regular text-white text-[0.688rem] xsm:text-[0.813rem] sm:text-xs xmd:text-base xl:text-2xl 2xl:text-3xl xxl:text-5xl xxxl:text-7xl xl:mt-4 mt-2 px-3 w-fit'>
                     Recupera tu seguridad con tratamientos pensados para ti
                 </p>
 
@@ -29,7 +29,7 @@ export const Inicio = () => {
             </div>
 
             {/* Columna video */}
-            <div className='xsm:py-auto xsm:px-2 mx-auto'>
+            <div className='mx-auto flex justify-center xsm:py-auto xsm:px-2'>
                 <video
                     autoPlay
                     loop
