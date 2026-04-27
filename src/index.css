@@ -41,9 +41,9 @@ body {
     }
 
     .qn-sms {
-        @apply text-center md:text-center text-3xl md:text-5xl font-mont-semibold text-white uppercase not-italic 
-            leading-[1.1em] inline-block tracking-[2px] no-underline my-[20px];
-    }
+    @apply text-center md:text-center text-3xl md:text-5xl font-mont-semibold text-white uppercase not-italic 
+        leading-[1.1em] inline-block tracking-[2px] no-underline my-[20px] pt-10 lg:pt-16 w-full;
+}
 
     .swiper-slide {
         @apply text-center font-mont-regular text-[18px]  flex justify-center items-center text-white;
