@@ -81,13 +81,13 @@ export const Nosotros = () => {
                         loading="lazy"
                         className="w-full aspect-[4/3] object-cover rounded-2xl shadow-xl"
                         src={acerca1}
-                        alt="Clínica Haar Medical"
+                        alt="Dr. Meraz 1"
                     />
                     <img
                         loading="lazy"
                         className="w-full aspect-[4/3] object-cover rounded-2xl shadow-xl"
                         src={acerca2}
-                        alt="Instalaciones Haar Medical"
+                        alt="Dr. Meraz 2"
                     />
                 </div>
 
