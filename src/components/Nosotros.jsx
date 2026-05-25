@@ -21,7 +21,7 @@ export const Nosotros = () => {
                 <div className="flex-1 space-y-10">
 
                     {/* Historia — con foto a la derecha en tablet */}
-                    <div className="flex flex-row gap-2 xsm:gap-4 items-start">
+                    <div className="flex flex-row gap-4 items-start">
                         <div className="flex-1">
                             <h3 className="text-center md:text-left tracking-widest text-primarylight text-xl sm:text-2xl lg:text-3xl mb-3">Historia</h3>
                             <p className="font-mont-regular tracking-widest text-sm md:text-base lg:text-lg text-justify text-white">
@@ -32,10 +32,10 @@ export const Nosotros = () => {
                         </div>
 
                         {/* Foto solo en móvil y tablet — al lado de Historia */}
-                        <div className="lg:hidden flex-shrink-0 bg-[#2a3545] rounded-2xl p-2 sm:p-3 hidden min-[425px]:flex items-center justify-center self-end mt-1">
+                        <div className="lg:hidden flex-shrink-0 rounded-2xl flex items-center justify-center self-end mt-2">
                             <img
                                 loading="lazy"
-                                className="w-20 xsm:w-28 sm:w-36 md:w-48 aspect-square object-cover rounded-xl"
+                                className="w-28 sm:w-36 md:w-48 aspect-square object-cover rounded-xl"
                                 src={perfil}
                                 alt="Dr. Carlos Meraz"
                             />
