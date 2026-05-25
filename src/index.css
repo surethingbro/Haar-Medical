@@ -9,8 +9,8 @@ body {
     --color-btn: oklch(0.8216 0.0237 252.21); /*#bac6d4*/
     --color-srv: oklch(0.7517 0.0062 239.85); /*abafb2*/
     --color-primarydark: oklch(0.3119 0.0426 253.1); /*#213246*/
-    --color-border-soft: /*#d0c9be*/
-    --color-dark-accent: /*#2a3545*/
+    --color-border-soft: #d0c9be;
+    --color-dark-accent: #2a3545;
 
     --font-mont-light: "Montserrat-Light", sans-serif;
     --font-mont-regular: "Montserrat-Regular", sans-serif;
@@ -37,7 +37,7 @@ body {
     }
 
     .hero-video {
-        @apply w-50 h-50 xsm:w-60 xsm:h-65 sm:w-70 sm:h-75 xl:h-115 xl:w-90 2xl:w-115 2xl:h-130 xxl:h-200 xxl:w-160 xxl:mt-10 xxxl:h-350 xxxl:w-350;    
+        @apply w-44 h-44 xsm:w-56 xsm:h-60 sm:w-70 sm:h-75 xl:h-115 xl:w-90 2xl:w-115 2xl:h-130 xxl:h-200 xxl:w-160 xxl:mt-10 xxxl:h-350 xxxl:w-350;    
     }
 
     .qn-sms {
@@ -63,6 +63,15 @@ body {
 
     .lbl-txt {
         @apply block text-lg font-mont-medium mb-1.5;
+    }
+
+    /* Fix Swiper Navigation Arrows on Mobile */
+    .swiper-button-prev {
+        @apply !left-2 md:!left-8;
+    }
+    
+    .swiper-button-next {
+        @apply !right-2 md:!right-8;
     }
 }
 

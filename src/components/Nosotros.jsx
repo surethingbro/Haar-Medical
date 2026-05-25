@@ -21,7 +21,7 @@ export const Nosotros = () => {
                 <div className="flex-1 space-y-10">
 
                     {/* Historia — con foto a la derecha en tablet */}
-                    <div className="flex flex-row gap-4 items-start">
+                    <div className="flex flex-row gap-2 xsm:gap-4 items-start">
                         <div className="flex-1">
                             <h3 className="text-center md:text-left tracking-widest text-primarylight text-xl sm:text-2xl lg:text-3xl mb-3">Historia</h3>
                             <p className="font-mont-regular tracking-widest text-sm md:text-base lg:text-lg text-justify text-white">
@@ -32,12 +32,14 @@ export const Nosotros = () => {
                         </div>
 
                         {/* Foto solo en móvil y tablet — al lado de Historia */}
-                        <img
-                            loading="lazy"
-                            className="lg:hidden w-24 md:w-48 aspect-square object-cover rounded-2xl shadow-xl flex-shrink-0"
-                            src={perfil}
-                            alt="Dr. Carlos Meraz"
-                        />
+                        <div className="lg:hidden flex-shrink-0 bg-[#2a3545] rounded-2xl p-2 sm:p-3 hidden min-[425px]:flex items-center justify-center self-end mt-1">
+                            <img
+                                loading="lazy"
+                                className="w-20 xsm:w-28 sm:w-36 md:w-48 aspect-square object-cover rounded-xl"
+                                src={perfil}
+                                alt="Dr. Carlos Meraz"
+                            />
+                        </div>
                     </div>
 
                     {/* Dr. Meraz — ancho completo en tablet */}
@@ -62,8 +64,8 @@ export const Nosotros = () => {
 
                     {/* Imágenes clínica — móvil y tablet */}
                     <div className="lg:hidden grid grid-cols-2 gap-3">
-                        <img loading="lazy" className="w-full h-32 md:h-40 object-cover rounded-2xl shadow-xl" src={acerca1} alt="Clínica Haar Medical" />
-                        <img loading="lazy" className="w-full h-32 md:h-40 object-cover rounded-2xl shadow-xl" src={acerca2} alt="Instalaciones Haar Medical" />
+                        <img loading="lazy" className="w-full aspect-[4/3] object-cover rounded-2xl shadow-xl" src={acerca1} alt="Clínica Haar Medical" />
+                        <img loading="lazy" className="w-full aspect-[4/3] object-cover rounded-2xl shadow-xl" src={acerca2} alt="Instalaciones Haar Medical" />
                     </div>
                 </div>
 
@@ -77,13 +79,13 @@ export const Nosotros = () => {
                     />
                     <img
                         loading="lazy"
-                        className="w-full h-50 object-cover rounded-2xl shadow-xl"
+                        className="w-full aspect-[4/3] object-cover rounded-2xl shadow-xl"
                         src={acerca1}
                         alt="Clínica Haar Medical"
                     />
                     <img
                         loading="lazy"
-                        className="w-full h-50 object-cover rounded-2xl shadow-xl"
+                        className="w-full aspect-[4/3] object-cover rounded-2xl shadow-xl"
                         src={acerca2}
                         alt="Instalaciones Haar Medical"
                     />
