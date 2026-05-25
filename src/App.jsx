@@ -3,6 +3,7 @@ import "./App.css"
 import { Header } from "./components/Header"
 import { Inicio } from "./components/Inicio"
 import { Nosotros } from "./components/Nosotros"
+import { Servicios } from "./components/Servicios"
   
 function App() {
   return (

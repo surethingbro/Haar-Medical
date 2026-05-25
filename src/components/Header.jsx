@@ -1,4 +1,5 @@
 import logo from '../images/header-logo.png';
+import vid from '../images/Intro-1.mp4';
 import { useState, useEffect } from 'react';
 
 const navLinks = [
@@ -22,8 +23,7 @@ export const Header = () => {
         className="bg-primarylight shadow-lg sticky top-0 left-0 w-full z-10">
 
         <div className="flex items-center justify-between py-3 sm:py-5 sm:px-10 px-4">
-          <img className="w-[4.8rem] sm:w-[10rem] lg:w-[13.75rem]" src={logo} alt="Logo" />
-
+          <img src={logo} alt="Haar Medical" className="hidden md:block w-[10rem] lg:w-[13.75rem]" />
           <ul className="hidden md:flex list-none items-center gap-x-6 lg:gap-x-8">
             {navLinks.map(({ href, label }) => (
               <li key={href}>
@@ -55,6 +55,8 @@ export const Header = () => {
         transform transition-transform duration-300 ease-in-out
         ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
 
+        <img src={logo} alt='Haar Medical' className='w-32 mx-auto mt-6 mb-2' />
+
         <button
           onClick={() => setMenuOpen(false)}
           className="absolute top-4 right-4 text-primarydark text-2xl font-bold"
@@ -76,6 +78,20 @@ export const Header = () => {
             </li>
           ))}
         </ul>
+
+        <div className="mt-4 px-6">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="none"
+            aria-hidden="true"
+            className="w-full rounded-lg object-cover shadow-md"
+          >
+            <source src={vid} type="video/mp4" />
+          </video>
+        </div>
       </div>
     </>
   );

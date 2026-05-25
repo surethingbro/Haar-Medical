@@ -29,7 +29,7 @@ export const Inicio = () => {
             </div>
 
             {/* Columna video */}
-            <div className='mx-auto flex justify-center xsm:py-auto xsm:px-2'>
+            <div className='hidden md:flex mx-auto justify-center xsm:py-auto xsm:px-2'>
                 <video
                     autoPlay
                     loop
