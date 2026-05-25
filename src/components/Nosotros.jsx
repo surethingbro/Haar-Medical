@@ -32,7 +32,7 @@ export const Nosotros = () => {
                         </div>
 
                         {/* Foto solo en móvil y tablet — al lado de Historia */}
-                        <div className="lg:hidden flex-shrink-0 rounded-2xl flex items-center justify-center self-end mt-2">
+                        <div className="hidden min-[425px]:flex lg:hidden flex-shrink-0 rounded-2xl items-center justify-center self-end mt-2">
                             <img
                                 loading="lazy"
                                 className="w-28 sm:w-36 md:w-48 aspect-square object-cover rounded-xl"
