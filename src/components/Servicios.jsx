@@ -9,7 +9,7 @@ const dataTratamientos = [
       'Consulta Médica Capilar', 'Kit anticaida',
       'Mesoterapia Capilar', 'Microinjerto Capilar (Técnica FUE)',
       'Exosomas', 'Microinjerto de Ceja',
-      'Sueroterapia con NAD +Dutasateride', 'Microinjerto De Barba',
+      'Sueroterapia con NAD + Dutasateride', 'Microinjerto De Barba',
       'Kit de Cuidado de Barba', 'Estimulación de Barba',
     ]
   },

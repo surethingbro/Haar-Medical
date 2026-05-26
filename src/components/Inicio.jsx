@@ -7,12 +7,12 @@ export const Inicio = () => {
             
             {/* Columna texto */}
             <div className="px-5 text-center py-5 sm:px-10 xmd:px-20 flex flex-col items-center">
-                <h1 className='text-[clamp(1rem,3vw+0.3rem,4.5rem)] xl:mt-4 font-mont-medium text-white uppercase'>
+                <h1 className='text-[clamp(1.25rem,3vw+0.3rem,4.5rem)] xl:mt-4 font-mont-medium text-white uppercase'>
                     Más que estética, <br/>
                     <span className="font-bold px-3">es confianza.</span>
                 </h1>
 
-                <p className='font-mont-regular text-white text-[clamp(0.7rem,1.5vw+0.3rem,3.5rem)] xl:mt-4 mt-2 px-3 w-fit'>
+                <p className='font-mont-regular text-white text-[clamp(0.85rem,1.5vw+0.3rem,3.5rem)] xl:mt-4 mt-2 px-3 w-fit'>
                     Recupera tu seguridad con tratamientos pensados para ti
                 </p>
 
