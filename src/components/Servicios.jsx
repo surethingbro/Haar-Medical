@@ -9,7 +9,7 @@ const dataTratamientos = [
     id: 1,
     titulo: 'Tratamientos Capilares',
     videoUrl: videoCapilar,
-    linkAgenda: 'https://youtube.com', // Aquí pondrás tu link de AgendaPro
+    linkAgenda: 'https://youtube.com', 
     servicios: [
       'Consulta Médica Capilar', 'Kit anticaida',
       'Mesoterapia Capilar', 'Microinjerto Capilar (Técnica FUE)',
@@ -73,7 +73,6 @@ export const Servicios = () => {
             >
               
               {/* ================= TARJETA HIJA (.card2) ================= */}
-              {/* Añadido 'cursor-pointer' para mejorar la respuesta táctil en móviles */}
               <div className="h-full bg-[#2a3545] rounded-2xl p-5 flex flex-col gap-4 transition-all duration-300 overflow-hidden group-hover:scale-[0.98] cursor-pointer">
                 
                 {/* Header: Número y Título */}
@@ -98,7 +97,7 @@ export const Servicios = () => {
                   />
                 </div>
 
-                {/* Lista de servicios (Aumentamos pb-16 en móvil para que el botón no pise el texto al emerger) */}
+                {/* Lista de servicios */}
                 <ul className="flex flex-col gap-1.5 text-sm text-white/80 flex-grow pb-16 lg:pb-14">
                   {tratamiento.servicios.map((servicio, i) => (
                     <li key={i} className="flex items-start gap-2">
@@ -108,8 +107,7 @@ export const Servicios = () => {
                   ))}
                 </ul>
 
-                {/* ================= BOTÓN EMERGENTE (AGENDA PRO) ================= */}
-                {/* Añadido 'z-10' para asegurar el clic inmediato en pantallas táctiles */}
+                {/* BOTÓN EMERGENTE */}
                 <div className="absolute bottom-4 left-0 w-full px-5 z-10 translate-y-12 opacity-0 transition-all duration-300 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] group-hover:translate-y-0 group-hover:opacity-100">
                   <a
                     href={tratamiento.linkAgenda}
