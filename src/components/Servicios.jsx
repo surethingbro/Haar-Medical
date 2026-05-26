@@ -4,13 +4,12 @@ import videoFacial from '../Videos/rnmd.mp4';
 import videoCorporal from '../Videos/corp.mp4';
 import videoMasculino from '../Videos/estética.mp4';
 
-// Asegúrate de usar la Solución 1 (carpeta public) o Solución 2 (imports de variables) para las URLs
 const dataTratamientos = [
   {
     id: 1,
     titulo: 'Tratamientos Capilares',
     videoUrl: videoCapilar,
-    linkAgenda: 'https://youtube.com',
+    linkAgenda: 'https://youtube.com', // Aquí pondrás tu link de AgendaPro
     servicios: [
       'Consulta Médica Capilar', 'Kit anticaida',
       'Mesoterapia Capilar', 'Microinjerto Capilar (Técnica FUE)',
@@ -74,7 +73,8 @@ export const Servicios = () => {
             >
               
               {/* ================= TARJETA HIJA (.card2) ================= */}
-              <div className="h-full bg-[#2a3545] rounded-2xl p-5 flex flex-col gap-4 transition-all duration-300 overflow-hidden group-hover:scale-[0.98]">
+              {/* Añadido 'cursor-pointer' para mejorar la respuesta táctil en móviles */}
+              <div className="h-full bg-[#2a3545] rounded-2xl p-5 flex flex-col gap-4 transition-all duration-300 overflow-hidden group-hover:scale-[0.98] cursor-pointer">
                 
                 {/* Header: Número y Título */}
                 <div className="flex justify-between items-start">
@@ -98,8 +98,8 @@ export const Servicios = () => {
                   />
                 </div>
 
-                {/* Lista de servicios (Crece para empujar el botón abajo gracias a 'flex-grow') */}
-                <ul className="flex flex-col gap-1.5 text-sm text-white/80 flex-grow pb-14">
+                {/* Lista de servicios (Aumentamos pb-16 en móvil para que el botón no pise el texto al emerger) */}
+                <ul className="flex flex-col gap-1.5 text-sm text-white/80 flex-grow pb-16 lg:pb-14">
                   {tratamiento.servicios.map((servicio, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#BBC7D5] shrink-0" />
@@ -109,15 +109,16 @@ export const Servicios = () => {
                 </ul>
 
                 {/* ================= BOTÓN EMERGENTE (AGENDA PRO) ================= */}
-                <div className="absolute bottom-4 left-0 w-full px-5 translate-y-12 opacity-0 transition-all duration-300 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] group-hover:translate-y-0 group-hover:opacity-100">
+                {/* Añadido 'z-10' para asegurar el clic inmediato en pantallas táctiles */}
+                <div className="absolute bottom-4 left-0 w-full px-5 z-10 translate-y-12 opacity-0 transition-all duration-300 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] group-hover:translate-y-0 group-hover:opacity-100">
                   <a
                     href={tratamiento.linkAgenda}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-2.5 px-4 bg-[#E8E1D6] text-[#213246] font-bold rounded-xl text-xs uppercase tracking-wider shadow-md flex justify-center items-center gap-1 transition-all duration-200 hover:bg-white hover:scale-105 active:scale-95"
+                    className="w-full py-2.5 px-4 bg-[#E8E1D6] text-[#213246] font-bold rounded-xl text-xs uppercase tracking-wider shadow-md flex justify-center items-center gap-1.5 transition-all duration-200 hover:bg-white hover:scale-105 active:scale-95"
                   >
                     Agenda hoy mismo
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </a>
