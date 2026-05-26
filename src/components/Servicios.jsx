@@ -1,10 +1,16 @@
 import React from 'react';
+import videoCapilar from '../Videos/Restauracion-Capilar.mp4';
+import videoFacial from '../Videos/rnmd.mp4';
+import videoCorporal from '../Videos/corp.mp4';
+import videoMasculino from '../Videos/estética.mp4';
 
+// Asegúrate de usar la Solución 1 (carpeta public) o Solución 2 (imports de variables) para las URLs
 const dataTratamientos = [
   {
     id: 1,
     titulo: 'Tratamientos Capilares',
-    videoUrl: './Restauracion-Capilar.mp4',
+    videoUrl: videoCapilar,
+    linkAgenda: 'https://youtube.com',
     servicios: [
       'Consulta Médica Capilar', 'Kit anticaida',
       'Mesoterapia Capilar', 'Microinjerto Capilar (Técnica FUE)',
@@ -13,11 +19,11 @@ const dataTratamientos = [
       'Kit de Cuidado de Barba', 'Estimulación de Barba',
     ]
   },
-
   {
     id: 2,
     titulo: 'Tratamientos Faciales',
-    videoUrl: './rnmd.mp4',
+    videoUrl: videoFacial,
+    linkAgenda: 'https://youtube.com',
     servicios: [
       'Rinomodelación', 'Toxina Cuello',
       'Labios con Ácido Hialurónico', 'Bruxismo',
@@ -27,21 +33,21 @@ const dataTratamientos = [
       'Biorremodeladores'
     ]
   },
-
   {
     id: 3,
     titulo: 'Tratamientos Corporales',
-    videoUrl: './corp.mp4',
+    videoUrl: videoCorporal,
+    linkAgenda: 'https://youtube.com',
     servicios: [
       'Hidrolipoclasia', 'Enzimas recombinantes',
       'Aumento de pantorrilla con Ácido Hialurónico'
     ]
   },
-
   {
     id: 4,
     titulo: 'Salud Estética Masculina',
-    videoUrl: './estética.mp4',
+    videoUrl: videoMasculino,
+    linkAgenda: 'https://youtube.com',
     servicios: [
       'Testosterona Shot', 'Escrotox',
       'Engrosamiento con Ácido Hialurónico', 'Gluteos con Ácido Hialurónico',
@@ -54,48 +60,70 @@ export const Servicios = () => {
   return (
     <section id="servicios" className="text-white py-16 px-4 md:py-24">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-center text-4xl md:text-5xl font-mont-semibold mb-12 md:mb-16 tracking-wider">
+        <h1 className="text-center text-4xl md:text-5xl font-bold mb-12 md:mb-16 tracking-wider text-[#E8E1D6]">
           NUESTROS SERVICIOS
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
           {dataTratamientos.map((tratamiento, index) => (
+            
+            /* ================= TARJETA PADRE (.card) ================= */
             <div
               key={tratamiento.id}
-              className="bg-[#2a3545] rounded-2xl p-5 shadow-lg flex flex-col gap-4"
+              className="group relative p-[2px] rounded-2xl transition-all duration-300 bg-transparent hover:bg-[linear-gradient(135deg,#213246_0%,#5A6A83_50%,#918670_100%)] hover:shadow-[0_0_30px_1px_rgba(90,106,131,0.4)]"
             >
-              {/* Number */}
-              <span className="text-4xl font-bold text-primarylight opacity-80">
-                {String(index + 1).padStart(2, '0')}
-              </span>
+              
+              {/* ================= TARJETA HIJA (.card2) ================= */}
+              <div className="h-full bg-[#2a3545] rounded-2xl p-5 flex flex-col gap-4 transition-all duration-300 overflow-hidden group-hover:scale-[0.98]">
+                
+                {/* Header: Número y Título */}
+                <div className="flex justify-between items-start">
+                  <h2 className="text-lg font-bold text-[#E8E1D6] tracking-tight max-w-[75%]">
+                    {tratamiento.titulo}
+                  </h2>
+                  <span className="text-3xl font-extrabold text-[#BBC7D5] opacity-40">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                </div>
 
-              {/* Video */}
-              <div className="w-full aspect-video rounded-xl overflow-hidden bg-black">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-full object-cover"
-                >
-                  <source src={tratamiento.videoUrl} type="video/mp4" />
-                </video>
+                {/* Video contenedor */}
+                <div className="w-full aspect-video rounded-xl overflow-hidden bg-black shadow-inner">
+                  <video
+                    src={tratamiento.videoUrl}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Lista de servicios (Crece para empujar el botón abajo gracias a 'flex-grow') */}
+                <ul className="flex flex-col gap-1.5 text-sm text-white/80 flex-grow pb-14">
+                  {tratamiento.servicios.map((servicio, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#BBC7D5] shrink-0" />
+                      <span>{servicio}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* ================= BOTÓN EMERGENTE (AGENDA PRO) ================= */}
+                <div className="absolute bottom-4 left-0 w-full px-5 translate-y-12 opacity-0 transition-all duration-300 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] group-hover:translate-y-0 group-hover:opacity-100">
+                  <a
+                    href={tratamiento.linkAgenda}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-2.5 px-4 bg-[#E8E1D6] text-[#213246] font-bold rounded-xl text-xs uppercase tracking-wider shadow-md flex justify-center items-center gap-1 transition-all duration-200 hover:bg-white hover:scale-105 active:scale-95"
+                  >
+                    Agenda hoy mismo
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </a>
+                </div>
+
               </div>
-
-              {/* Title */}
-              <h2 className="text-lg font-bold text-primarylight tracking-tight">
-                {tratamiento.titulo}
-              </h2>
-
-              {/* Services list */}
-              <ul className="flex flex-col gap-1.5 text-sm text-white/80">
-                {tratamiento.servicios.map((servicio, i) => (
-                  <li key={i} className="flex items-start gap-2">
-                    <span className="mt-1 w-1.5 h-1.5 rounded-full bg-primarylight shrink-0" />
-                    <span>{servicio}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           ))}
         </div>

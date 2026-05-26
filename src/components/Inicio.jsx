@@ -1,5 +1,7 @@
 import inicio from '../images/inicio-icon.png';
 import vid from '../images/Intro-1.mp4'
+import { AgendaBtn } from './AgendaBtn'
+
 
 export const Inicio = () => {
     return (
@@ -7,18 +9,18 @@ export const Inicio = () => {
             
             {/* Columna texto */}
             <div className="px-5 text-center py-5 sm:px-10 xmd:px-20 flex flex-col items-center">
-                <h1 className='text-[clamp(1.25rem,3vw+0.3rem,4.5rem)] xl:mt-4 font-mont-medium text-white uppercase'>
+                <h1 className='text-[clamp(1.25rem,3vw+0.3rem,4.5rem)] xl:mt-4 font-mont-medium text-primarylight uppercase'>
                     Más que estética, <br/>
-                    <span className="font-bold px-3">es confianza.</span>
+                    <span className="font-bold px-3 text-accent">es confianza.</span>
                 </h1>
 
-                <p className='font-mont-regular text-white text-[clamp(0.85rem,1.5vw+0.3rem,3.5rem)] xl:mt-4 mt-2 px-3 w-fit'>
+                <p className='font-mont-regular text-primarylight text-[clamp(0.85rem,1.5vw+0.3rem,3.5rem)] xl:mt-4 mt-2 px-3 w-fit'>
                     Recupera tu seguridad con tratamientos pensados para ti
                 </p>
 
                 <div className='py-[clamp(0.4rem,4vw,5rem)]'>
-                    <a href="#contacto" className='cita-btn'>Agenda tu cita</a>
-                </div>
+                    <AgendaBtn />
+                    </div>
 
                 <img
                     src={inicio}

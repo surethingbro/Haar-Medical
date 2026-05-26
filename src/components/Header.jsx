@@ -71,7 +71,7 @@ export const Header = () => {
               <a
                 href={href}
                 onClick={() => setMenuOpen(false)}
-                className={`nav-a block py-4 ${i < navLinks.length - 1 ? 'border-b border-border-soft' : ''}`}
+                className={`nav-a block py-4 ${i < navLinks.length - 1 ? 'border-b border-btn' : ''}`}
               >
                 {label}
               </a>

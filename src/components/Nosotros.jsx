@@ -8,7 +8,7 @@ export const Nosotros = () => {
             <h2 className="qn-sms">¿Quiénes Somos?</h2>
 
             <div className="px-5 sm:px-10 md:px-16 lg:px-20 mb-10">
-                <p className="font-mont-regular tracking-wide text-sm md:text-base lg:text-lg text-justify text-white">
+                <p className="font-mont-regular tracking-wide text-sm md:text-base lg:text-lg text-justify text-primarylight">
                     Haar Medical es una clínica de medicina estética que se caracteriza por su experiencia en
                     armonización facial y restauración capilar, contando con especialistas reconocidos a nivel
                     mundial, y con el respaldo de los laboratorios mejor posicionados en el mercado dermoestético.
@@ -23,8 +23,8 @@ export const Nosotros = () => {
                     {/* Historia — con foto a la derecha en tablet */}
                     <div className="flex flex-row gap-4 items-start">
                         <div className="flex-1">
-                            <h3 className="text-center md:text-left tracking-widest text-primarylight text-xl sm:text-2xl lg:text-3xl mb-3">Historia</h3>
-                            <p className="font-mont-regular tracking-wide text-sm md:text-base lg:text-lg text-justify text-white">
+                            <h3 className="text-center md:text-left tracking-widest text-accent text-xl sm:text-2xl lg:text-3xl mb-3">Historia</h3>
+                            <p className="font-mont-regular tracking-wide text-sm md:text-base lg:text-lg text-justify text-primarylight">
                                 Haar se forja desde el compromiso de brindar soluciones estéticas personalizadas de alta calidad.
                                 Nos enfocamos en la restauración capilar y tratamientos médicos avanzados,
                                 siempre con la promesa de ofrecer excelencia tecnológica y humana.
@@ -44,8 +44,8 @@ export const Nosotros = () => {
 
                     {/* Dr. Meraz — ancho completo en tablet */}
                     <div>
-                        <h3 className="text-center md:text-left tracking-widest text-primarylight text-xl sm:text-2xl lg:text-3xl mb-3">Sobre el Dr. Carlos Meraz</h3>
-                        <div className="space-y-3 font-mont-regular tracking-wide text-sm md:text-base lg:text-lg text-justify text-white leading-relaxed">
+                        <h3 className="text-center md:text-left tracking-widest text-accent text-xl sm:text-2xl lg:text-3xl mb-3">Sobre el Dr. Carlos Meraz</h3>
+                        <div className="space-y-3 font-mont-regular tracking-wide text-sm md:text-base lg:text-lg text-justify text-primarylight leading-relaxed">
                             <p>
                                 El Dr. Carlos Meraz, egresado de la facultad de medicina de la Benemérita Universidad Autónoma de Puebla,
                                 cuenta con diversos posgrados en medicina estética y medicina regenerativa, actualmente con maestría en

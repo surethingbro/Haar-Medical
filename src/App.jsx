@@ -4,6 +4,7 @@ import { Header } from "./components/Header"
 import { Inicio } from "./components/Inicio"
 import { Nosotros } from "./components/Nosotros"
 import { Servicios } from "./components/Servicios"
+import { Test } from "./components/Test"
   
 function App() {
   return (
@@ -11,11 +12,8 @@ function App() {
     <Header/>
     <Inicio/>
     <Nosotros/>
+    <Servicios/>
   </>)
 }
 
 export default App
-
-
-/*NOTA: PRIMERO ENTRAR A LA CARPETA DE HAAR_MEDICAL
-CON cd HAAR_MEDICAL y luego el npm run dev :)*/
