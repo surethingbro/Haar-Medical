@@ -9,7 +9,7 @@ const dataTratamientos = [
     id: 1,
     titulo: 'Tratamientos Capilares',
     videoUrl: videoCapilar,
-    linkAgenda: 'https://youtube.com', 
+    linkAgenda: 'https://link.agendapro.com/mx/haarmedical/bbf7b311',
     servicios: [
       'Consulta Médica Capilar', 'Kit anticaida',
       'Mesoterapia Capilar', 'Microinjerto Capilar (Técnica FUE)',
@@ -22,7 +22,7 @@ const dataTratamientos = [
     id: 2,
     titulo: 'Tratamientos Faciales',
     videoUrl: videoFacial,
-    linkAgenda: 'https://youtube.com',
+    linkAgenda: 'https://link.agendapro.com/mx/haarmedical/bbf7b311',
     servicios: [
       'Rinomodelación', 'Toxina Cuello',
       'Labios con Ácido Hialurónico', 'Bruxismo',
@@ -36,7 +36,7 @@ const dataTratamientos = [
     id: 3,
     titulo: 'Tratamientos Corporales',
     videoUrl: videoCorporal,
-    linkAgenda: 'https://youtube.com',
+    linkAgenda: 'https://link.agendapro.com/mx/haarmedical/bbf7b311',
     servicios: [
       'Hidrolipoclasia', 'Enzimas recombinantes',
       'Aumento de pantorrilla con Ácido Hialurónico'
@@ -46,7 +46,7 @@ const dataTratamientos = [
     id: 4,
     titulo: 'Salud Estética Masculina',
     videoUrl: videoMasculino,
-    linkAgenda: 'https://youtube.com',
+    linkAgenda: 'https://link.agendapro.com/mx/haarmedical/bbf7b311',
     servicios: [
       'Testosterona Shot', 'Escrotox',
       'Engrosamiento con Ácido Hialurónico', 'Gluteos con Ácido Hialurónico',
@@ -65,16 +65,21 @@ export const Servicios = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
           {dataTratamientos.map((tratamiento, index) => (
-            
+
             /* ================= TARJETA PADRE (.card) ================= */
             <div
               key={tratamiento.id}
-              className="group relative p-[2px] rounded-2xl transition-all duration-300 bg-transparent hover:bg-[linear-gradient(135deg,#213246_0%,#5A6A83_50%,#918670_100%)] hover:shadow-[0_0_30px_1px_rgba(90,106,131,0.4)]"
+              className="group relative p-[2px] rounded-2xl transition-all duration-300
+                bg-[linear-gradient(135deg,#213246_0%,#5A6A83_50%,#918670_100%)]
+                shadow-[0_0_30px_1px_rgba(90,106,131,0.4)]
+                lg:bg-transparent lg:shadow-none
+                hover:bg-[linear-gradient(135deg,#213246_0%,#5A6A83_50%,#918670_100%)]
+                hover:shadow-[0_0_30px_1px_rgba(90,106,131,0.4)]"
             >
-              
+
               {/* ================= TARJETA HIJA (.card2) ================= */}
-              <div className="h-full bg-[#2a3545] rounded-2xl p-5 flex flex-col gap-4 transition-all duration-300 overflow-hidden group-hover:scale-[0.98] cursor-pointer">
-                
+              <div className="h-full bg-[#2a3545] rounded-2xl p-5 flex flex-col gap-4 transition-all duration-300 overflow-hidden lg:group-hover:scale-[0.98] cursor-pointer">
+
                 {/* Header: Número y Título */}
                 <div className="flex justify-between items-start">
                   <h2 className="text-lg font-bold text-[#E8E1D6] tracking-tight max-w-[75%]">
@@ -108,7 +113,11 @@ export const Servicios = () => {
                 </ul>
 
                 {/* BOTÓN EMERGENTE */}
-                <div className="absolute bottom-4 left-0 w-full px-5 z-10 translate-y-12 opacity-0 transition-all duration-300 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] group-hover:translate-y-0 group-hover:opacity-100">
+                <div className="absolute bottom-4 left-0 w-full px-5 z-10
+                  lg:translate-y-12 lg:opacity-0
+                  transition-all duration-300 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)]
+                  group-hover:translate-y-0 group-hover:opacity-100">
+                  
                   <a
                     href={tratamiento.linkAgenda}
                     target="_blank"

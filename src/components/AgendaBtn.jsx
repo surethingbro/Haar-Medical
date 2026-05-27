@@ -3,10 +3,15 @@ export const AgendaBtn = () => {
   const message = encodeURIComponent("Hola, me gustaría agendar una cita.");
   const waLink = 'https://wa.me/' + phone + '?text=' + message;
     
+  const handleScroll = (e) => {
+    e.preventDefault();
+    document.getElementById('servicios')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <a 
-      href={waLink} 
-      target="_blank" 
+      href= "#servicios" 
+      onclick = {handleScroll}
       rel="noopener noreferrer" 
       className="group relative flex justify-center items-center flex-col text-center no-underline font-bold cursor-pointer transition-all duration-200 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] shadow-[0_10px_10px_rgba(0,0,0,0.1)]
         bg-[#BBC7D5] text-[#213246] hover:bg-[linear-gradient(135deg,#213246_0%,#5A6A83_70%,#918670_100%)] hover:text-white
