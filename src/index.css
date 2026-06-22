@@ -12,6 +12,7 @@ body {
     --color-secondary: #5A6A83;     /* 10% — hovers, subtítulos, iconos */
     --color-accent: #918670; 
 
+    
     --font-mont-light: "Montserrat-Light", sans-serif;
     --font-mont-regular: "Montserrat-Regular", sans-serif;
     --font-mont-medium: "Montserrat-Medium", sans-serif;
@@ -23,8 +24,15 @@ body {
     --breakpoint-xxl: 160rem; /* 2560px */
     --breakpoint-xxxl: 240rem; /*3840px */
 
+     --animate-scroll: scroll 60s linear infinite;
+
 }
 
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
 
 @layer components {
     .nav-a {

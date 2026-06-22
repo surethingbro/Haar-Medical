@@ -1,5 +1,5 @@
 import inicio from '../images/inicio-icon.png';
-import vid from '../images/Intro-1.mp4'
+import vid from '../Videos/Intro-1.mp4'
 import { AgendaBtn } from './AgendaBtn'
 
 

@@ -17,10 +17,9 @@ export const Nosotros = () => {
 
             <div className="px-5 sm:px-10 md:px-16 lg:px-20 flex flex-col lg:flex-row gap-12 items-start">
 
-                {/* Columna de Texto */}
+        
                 <div className="flex-1 space-y-10">
 
-                    {/* Historia — con foto a la derecha en tablet */}
                     <div className="flex flex-row gap-4 items-start">
                         <div className="flex-1">
                             <h3 className="text-center md:text-left tracking-widest text-accent text-xl sm:text-2xl lg:text-3xl mb-3">Historia</h3>
@@ -31,7 +30,7 @@ export const Nosotros = () => {
                             </p>
                         </div>
 
-                        {/* Foto solo en móvil y tablet — al lado de Historia */}
+                      
                         <div className="hidden min-[425px]:flex lg:hidden flex-shrink-0 rounded-2xl items-center justify-center self-end mt-2">
                             <img
                                 loading="lazy"
@@ -42,7 +41,7 @@ export const Nosotros = () => {
                         </div>
                     </div>
 
-                    {/* Dr. Meraz — ancho completo en tablet */}
+                  
                     <div>
                         <h3 className="text-center md:text-left tracking-widest text-accent text-xl sm:text-2xl lg:text-3xl mb-3">Sobre el Dr. Carlos Meraz</h3>
                         <div className="space-y-3 font-mont-regular tracking-wide text-sm md:text-base lg:text-lg text-justify text-primarylight leading-relaxed">
@@ -62,14 +61,14 @@ export const Nosotros = () => {
                         </div>
                     </div>
 
-                    {/* Imágenes clínica — móvil y tablet */}
+                    {/* imágenes móvil y tablet */}
                     <div className="lg:hidden grid grid-cols-2 gap-3">
                         <img loading="lazy" className="w-full aspect-[4/3] object-cover rounded-2xl shadow-xl" src={acerca1} alt="Clínica Haar Medical" />
                         <img loading="lazy" className="w-full aspect-[4/3] object-cover rounded-2xl shadow-xl" src={acerca2} alt="Instalaciones Haar Medical" />
                     </div>
                 </div>
 
-                {/* Columna derecha — solo desktop */}
+                {/* columna derecha - desktop */}
                 <div className="hidden lg:grid flex-1 grid-cols-2 gap-4 w-full lg:max-w-md">
                     <img
                         loading="lazy"

@@ -1,12 +1,11 @@
 import logo from '../images/header-logo.png';
-import vid from '../images/Intro-1.mp4';
+import vid from '../Videos/Intro-1.mp4';
 import { useState, useEffect } from 'react';
 
 const navLinks = [
   { href: '#inicio',    label: 'Inicio' },
   { href: '#nosotros',  label: 'Nosotros' },
   { href: '#servicios', label: 'Servicios' },
-  { href: '#contacto',  label: 'Contacto' },
 ];
 
 export const Header = () => {
